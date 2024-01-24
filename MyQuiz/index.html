@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Quiz Creator</title>
+</head>
+
+<body>
+
+  <!-- Navigation bar starts -->
+
+  <div class="nav">
+    <input type="checkbox" id="nav-check">
+    <div class="nav-header">
+      <div class="nav-title">
+        Quiz Crafters
+      </div>
+    </div>
+    <div class="nav-btn">
+      <label for="nav-check">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+    </div>
+    <div class="nav-links">
+      <a href="/home page/index.html">Home</a>
+      <a href="/MyQuiz/index.html">My Quiz</a>
+      <a href="/About us/about_us.html">About us</a>
+      <a href="/Contact us/index.html">Contact us</a>
+    </div>
+  </div>
+
+  <!-- Navigaation bar ends -->
+
+  <div class="container">
+    <h1>Create Your Quiz</h1>
+    <form id="quizForm">
+      <label for="question">Question:</label>
+      <input type="text" id="question" name="question" required>
+
+      <label for="option1">Option 1:</label>
+      <input type="text" id="option1" name="option1" required>
+
+      <label for="option2">Option 2:</label>
+      <input type="text" id="option2" name="option2" required>
+
+      <label for="option3">Option 3:</label>
+      <input type="text" id="option3" name="option3" required>
+
+      <label for="option4">Option 4:</label>
+      <input type="text" id="option4" name="option4" required>
+
+      <label for="option5">Correct Answer:</label>
+      <input type="text" id="option4" name="option4" required>
+
+      <button type="button" onclick="addQuestion()">Add Question</button>
+      <button type="button" onclick="createQuiz()">Create Quiz</button>
+    </form>
+
+    <div id="quizPreview"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
