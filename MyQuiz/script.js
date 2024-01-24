@@ -55,5 +55,6 @@ function clearInputs() {
   document.getElementById('option2').value = '';
   document.getElementById('option3').value = '';
   document.getElementById('option4').value = '';
+  document.getElementById('option5').value = '';
 }
 
